@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>じかんしていタイマー</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h3>じかんをしていしてね！</h3>
+
+    <div class="controls">
+        時：
+        <select id="hour"></select>
+        
+        分：
+        <select id="minute"></select>
+    </div>
+
+    <div class="buttons">
+        <button id="start">スタート</button>
+        <button id="reset">リセット</button>
+    </div>
+
+    <h1 id="timer-display"></h1>
+
+    <!-- JavaScript -->
+    <script src="https://unpkg.com/obniz@latest/obniz.js"></script>
+    <script src="TimeSet.js"></script>
+</body>
+</html>
