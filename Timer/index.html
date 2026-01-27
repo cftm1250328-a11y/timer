@@ -9,9 +9,25 @@
 </head>
 
 <body>
+    <div class="status-bar">
+        <span id="obniz-status" class="status-disconnected">● 未接続</span>
+    </div>
+
     <h3>じかんをしていしてね！</h3>
 
-    <div class="controls">
+    <div class="profile-section">
+        <h3>プロファイル</h3>
+        <div class="profile-buttons">
+            <button id="profile-5m">5分</button>
+            <button id="profile-10m">10分</button>
+            <button id="profile-15m">15分</button>
+            <button id="profile-30m">30分</button>
+            <button id="profile-1h">1時間</button>
+            <button id="profile-custom">カスタム</button>
+        </div>
+    </div>
+
+    <div class="controls" id="custom-controls" style="display:none;">
         時：
         <select id="hour"></select>
         
@@ -21,10 +37,12 @@
 
     <div class="buttons">
         <button id="start">スタート</button>
-        <button id="reset">リセット</button>
+        <button id="reset">すべてリセット</button>
     </div>
 
-    <h1 id="timer-display"></h1>
+    <!-- タイマー表示エリア -->
+    <div id="timers-container" class="timers-container">
+    </div>
 
     <!-- JavaScript -->
     <script src="https://unpkg.com/obniz@latest/obniz.js"></script>
